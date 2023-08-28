@@ -2,14 +2,11 @@
 SEA-Net: Structure-Enhanced Attention Network for Limited-Angle CBCT Reconstruction of Clinical Projection Data
 
 # Preparation
-The training and test data can be downloaded at https://drive.google.com/drive/folders/1_1Ll5frH72_HwdVmGERrNfnbSpqZqphj.
-You will get the train.zip, test.zip and PriorNet.
-First, put the "PriorNet" into the current folder "PRIOR-Net".
-Next, unzip the train.zip and test.zip to get the folders "train" and "test" and put them in the current directory.
+Download the pre-trained VGG16 weights (vgg_16.ckpt) at https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models.
+Then put the vgg_16.ckpt into the "Code" folder.
 
-
-# Training for PRIOR-Net
-1. Enter the folder "PRIOR-Net" and run "python TFRecordOp.py" and the files in the "TFRecordsFile" will be saved as tfrecord files
+# Training for SEA-Net
+1. Enter the folder "Code" and run "python TFRecordOp.py" and the files in the "TFRecordsFile" will be saved as tfrecord files
 
 2. run "python main_PriorNet.py" and the model will be saved every epoch
 
