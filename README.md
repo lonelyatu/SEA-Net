@@ -14,13 +14,12 @@ Then put the vgg_16.ckpt into the "Code" folder.
 
 # Environment
 
+The code was tested in NVIDIA GeForce RTX 3090 (24GB) with tf2.0 and GTX TITAN (12GB) with tf1.x.
+The current code was implemented based on the tf1.x with the following settings:
+
 cuda 10.0
-
 python 3.6.13
-
 TensorFlow 1.15.4
-
 Numpy 1.16.0
-
 Scipy 1.2.1
 
